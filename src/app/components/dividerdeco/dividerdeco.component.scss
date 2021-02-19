@@ -1,0 +1,58 @@
+.contenedor {
+    /*IMPORTANTE*/
+    justify-content: center;
+    align-items: center;
+}
+
+.align {
+    /*IMPORTANTE*/
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+}
+
+.iconos {
+    color: rgb(0, 155, 221);
+    font-size: 33px;
+}
+
+.iconContainer {
+    padding-bottom: 20px;
+}
+
+.contentContainer {
+    padding-top: 6px;
+    justify-content: center;
+}
+
+.textContainer {
+    padding-top: 0px;
+    justify-content: center;
+}
+
+.card-title {
+    color: #414247;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    margin: -2px 0px 0px;
+    text-align: left;
+}
+
+.card-content {
+    color: #7a7a7a;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: left;
+}
+
+.divider {
+    width: 370px;
+    height: 79px;
+    background-color: #eae7e7;
+    border-radius: 50px 0px 0px 50px;
+    display: flex;
+    line-height: 21px;
+    margin: 10px;
+    padding: 10px;
+}

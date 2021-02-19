@@ -1,0 +1,16 @@
+$main-color: #47bff7;
+$light-text: #ABB0BE;
+.button {
+    background: $main-color;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    border-radius: 3px;
+    font-size: 16px;
+    margin: 25px 0 15px 0;
+    &:hover {
+        background: lighten($main-color, 3%);
+    }
+}

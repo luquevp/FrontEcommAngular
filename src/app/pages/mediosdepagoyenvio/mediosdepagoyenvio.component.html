@@ -1,0 +1,87 @@
+<div class=" container animatedf">
+
+    <br>
+    <div class="row contenedor">
+
+        <div class="card">
+            <div class="card-body">
+                <h4>Despachamos tu compra dentro de las 24 hs después de haber realizado el pago. </h4>
+                <h5>Nos pondremos en contacto vía telefónica para corroborar tu pedido coordinar el pago y el envío.</h5>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-6 contenedor">
+
+            <div class="row ">
+                <div class=" col ">
+                    <div class="row contenedor">
+                        <h1 class="titulo  ">MEDIOS DE PAGO</h1>
+                    </div>
+                    <div class="row contenedor">
+
+                        <div class="card rounded-pill divider " *ngFor="let medio of mediosdepago ">
+                            <div class="row align ">
+
+                                <div class="col-2 iconContainer ">
+                                    <div>
+                                        <fa-icon [icon]="medio.icon " class="iconos "></fa-icon>
+                                    </div>
+                                </div>
+
+                                <div class="col-8 ">
+                                    <div class="row contentContainer ">
+                                        <p class="card-title ">{{medio.title}}</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-6 contenedor">
+
+
+            <div class="row ">
+                <div class="col ">
+
+                    <div class="row contenedor ">
+                        <h1 class="titulo ">MEDIOS DE ENVÍO</h1>
+                    </div>
+                    <div class="row contenedor">
+
+                        <div class="card rounded-pill divider " *ngFor="let medio of mediosdeenvio ">
+                            <div class="row align ">
+
+                                <div class="col-2 iconContainer ">
+                                    <div>
+                                        <fa-icon [icon]="medio.icon " class="iconos "></fa-icon>
+                                    </div>
+                                </div>
+
+                                <div class="col-8 ">
+                                    <div class="row contentContainer ">
+                                        <p class="card-title ">{{medio.title}}</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>

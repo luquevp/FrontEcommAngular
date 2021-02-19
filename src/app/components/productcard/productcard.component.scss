@@ -1,0 +1,155 @@
+body {
+    background-color: #a2dfe0
+}
+
+.container {
+    // height: 100vh
+}
+
+.productcard {
+    background-color: #fff;
+    //  width: 400px;
+    padding: 10px;
+    border: transparent;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.inner-card {
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px
+}
+
+.btn:focus {
+    color: #fff;
+    background-color: #68b9c4;
+    border-color: #68b9c4;
+    box-shadow: none
+}
+
+.btn {
+    background: transparent;
+    border: 2px solid #c1e8ed;
+    color: #68b9c4;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.btncont {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+.btn:hover {
+    background: #c1e8ed;
+    color: #fff
+}
+
+.productprice {
+    text-align: center;
+    color: #747474;
+    font-weight: lighter;
+    margin-top: 2px;
+}
+
+.productcard-footer {
+    margin: 0%;
+    padding: 0%;
+    background-color: transparent;
+}
+
+.productcard-title {
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.productcard-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.img {
+    height: auto;
+    width:100%;
+    text-align: center;
+}
+
+.align {
+    margin-left: 10px;
+}
+
+//////////////////////////////////////////////////////////MODAL///////////////////////////////////////////////////////////////////@at-root
+$primary-color: #68b9c4;
+.modalcard {
+    border: none
+}
+
+.product {
+    background-color: #eee
+}
+
+.brand {
+    font-size: 13px
+}
+
+.act-price {
+    color: $primary-color;
+    font-weight: 700
+}
+
+.dis-price {
+    text-decoration: line-through
+}
+
+.about {
+    font-size: 14px
+}
+
+.color {
+    margin-bottom: 10px
+}
+
+label.radio {
+    cursor: pointer
+}
+
+label.radio input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    pointer-events: none
+}
+
+label.radio span {
+    padding: 2px 9px;
+    border: 2px solid $primary-color;
+    display: inline-block;
+    color: $primary-color;
+    border-radius: 3px;
+    text-transform: uppercase
+}
+
+label.radio input:checked+span {
+    border-color: $primary-color;
+    background-color: $primary-color;
+    color: #fff;
+}
+
+.footermodal {
+    align-content: center;
+    align-items: flex-end;
+    justify-content: center;
+}

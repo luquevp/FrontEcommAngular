@@ -1,0 +1,24 @@
+<div class="container-fluid">
+    <div class="row contenedor">
+        <div class="card rounded-pill divider" *ngFor="let divider of dividers">
+            <div class="row align">
+
+                <div class="col-2 iconContainer">
+                    <div>
+                        <fa-icon [icon]="divider.icon" class="iconos"></fa-icon>
+                    </div>
+                </div>
+
+                <div class="col-8 ">
+                    <div class="row contentContainer">
+                        <p class="card-title">{{divider.title}}</p>
+                    </div>
+                    <div class="row textContainer">
+                        <p class="card-content">{{divider.content}}</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

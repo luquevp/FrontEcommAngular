@@ -1,0 +1,83 @@
+$primary-color: #68b9c4;
+body {
+    background-color: #000
+}
+
+.card {
+    border: none
+}
+
+.product {
+    background-color: #eee
+}
+
+.brand {
+    font-size: 13px
+}
+
+.act-price {
+    color: $primary-color;
+    font-weight: 700
+}
+
+.dis-price {
+    text-decoration: line-through
+}
+
+.about {
+    font-size: 14px
+}
+
+.color {
+    margin-bottom: 10px
+}
+
+label.radio {
+    cursor: pointer
+}
+
+label.radio input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    pointer-events: none
+}
+
+label.radio span {
+    padding: 2px 9px;
+    border: 2px solid $primary-color;
+    display: inline-block;
+    color: $primary-color;
+    border-radius: 3px;
+    text-transform: uppercase
+}
+
+label.radio input:checked+span {
+    border-color: $primary-color;
+    background-color: $primary-color;
+    color: #fff
+}
+
+.btncont {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.btn {
+    background: transparent;
+    border: 2px solid #c1e8ed;
+    color: #68b9c4;
+    text-align: center;
+    background-color: transparent;
+}
+
+.btn:hover {
+    background: #c1e8ed;
+    color: #fff;
+}
+
+.btn:focus {
+    box-shadow: none
+}

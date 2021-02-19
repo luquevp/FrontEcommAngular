@@ -1,0 +1,79 @@
+<div class="container-fluid">
+    <div class="row">
+        <aside class="col-lg-9">
+            <div class="card">
+                <div class="table-responsive">
+                    <table class="table table-borderless table-shopping-cart">
+                        <thead class="text-muted">
+                            <tr class="small text-uppercase">
+                                <th scope="col">Product</th>
+                                <th scope="col" width="120">Quantity</th>
+                                <th scope="col" width="120">Price</th>
+                                <th scope="col" class="text-right d-none d-md-block" width="200"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr class="clearfix" *ngFor="let item of items">
+
+                                <td>
+                                    <figure class="itemside align-items-center">
+                                        <div class="aside"><img [src]="item.img" class="img-sm"></div>
+                                        <figcaption class="info"> <a href="#" class="title text-dark" data-abc="true">{{item.name}}</a>
+                                            <p class="text-muted small">SIZE: L <br> Brand: MAXTRA</p>
+                                        </figcaption>
+                                    </figure>
+                                </td>
+                                <td>
+
+
+
+                                    <input type="number" class="form-control" name="" id="" value="{{item.quantity}}">
+
+                                </td>
+                                <td>
+                                    <div class="price-wrap"> <var class="price">${{item.price}}</var> <small class="text-muted"></small> </div>
+                                </td>
+                                <td class="text-right d-none d-md-block">
+                                    <a (click)="remove(item)" class="btn btn-light " style="color: white;" data-abc="true">Remove</a> </td>
+                            </tr>
+
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </aside>
+        <aside class="col-lg-3">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <form>
+                        <div class="form-group"> <label>Tienes un cupón?</label>
+                            <div class="input-group"> <input type="text" class="form-control coupon" name="" placeholder="Coupon code"> <span class="input-group-append"> <button class="btn btn-primary btn-apply coupon">Apply</button> </span> </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <dl class="dlist-align">
+                        <dt>Total price:</dt>
+                        <dd class="text-right ml-3">${{totalPrice}}</dd>
+                    </dl>
+                    <dl class="dlist-align">
+                        <dt>Discount:</dt>
+                        <dd class="text-right text-danger ml-3">- $0.00</dd>
+                    </dl>
+                    <dl class="dlist-align">
+                        <dt>Total:</dt>
+                        <dd class="text-right text-dark b ml-3"><strong>${{totalPrice}}</strong></dd>
+                    </dl>
+                    <hr> <a href="#" class="btn button btn-out btn-primary btn-square btn-main" data-abc="true" (click)="comprar"> Realizar compra </a>
+                    <app-btnvolvertienda></app-btnvolvertienda>
+                </div>
+            </div>
+        </aside>
+    </div>
+</div>

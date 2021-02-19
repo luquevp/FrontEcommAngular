@@ -1,0 +1,24 @@
+.animatedf {
+    animation: fadeIn;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+}
+
+.align {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.margen {
+    margin-top: 20px;
+}
+
+.titulo {
+    color: #404040;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 33px 0px;
+    text-align: center;
+}

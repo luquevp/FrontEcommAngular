@@ -1,0 +1,29 @@
+<div class=" container animatedf">
+
+    <div class="row contenedor">
+        <h1 class="titulo ">PREGUNTAS FRECUENTES</h1>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2">
+        <div class="col mb-4">
+
+            <div *ngFor="let pregunta of preguntas" class="row contenedor">
+
+                <div class="card margen ">
+                    <div class="card-body">
+
+                        <div class="row contentContainer">
+                            <p class="card-title ">{{pregunta.title}}</p>
+                        </div>
+                        <div class="row textContainer">
+                            <p class="card-content">{{pregunta.content}}</p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
